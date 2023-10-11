@@ -1,7 +1,7 @@
 .container {
-  background-color: #f3e5f5;
-  width: 50vw;
+  width: 100%;
   height: 100vh;
+
 }
 
 .remover_container {
@@ -21,6 +21,18 @@
   row-gap: 10px;
   font-size: 1.5rem;
   margin-top: 1.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-image-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  background-color: #00c853;
+
 }
 
 input {
@@ -50,9 +62,10 @@ input {
   overflow-y: hidden;
   border-radius: 7px;
   position: relative;
-  width: 100%;
-  height: 100%;
-  border: 5px solid red;
+  width: 700px;
+  /* border: 5px solid black; */
+  text-align: center;
+
 }
 
 /* for mobiles */
@@ -64,7 +77,12 @@ input {
 
 .final_img {
   position: absolute;
-  left: 0;
+  left: 50%;
+  /* Move 50% from the left edge of its containing element */
+  transform: translateX(-50%);
+  /* Move back 50% of its own width to center it horizontally */
+  width: 77%;
+  height: 465px;
 }
 
 .main-img {
@@ -72,12 +90,13 @@ input {
   height: 100%;
 }
 
-/* .resize-controls {
+.resize-controls {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: blue;
-} */
+  position: relative;
+
+  width: 200px;
+  text-align: center;
+}
 
 /* .Draggable {
   position: absolute;
@@ -90,3 +109,16 @@ input {
   bottom: -10rem;
   z-index: 100;
 } */
+
+
+.draggable-div {
+  display: flex;
+  width: 500px;
+  height: 200px;
+
+}
+
+.prop-image {
+  width: 100px;
+
+}

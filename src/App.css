@@ -1,4 +1,41 @@
-.App{
+.App {
   display: flex;
   justify-content: space-between;
+}
+
+.backdrop {
+  /* background-image: url(https://mask-test-ck.s3.eu-west-1.amazonaws.com/4.jpg); */
+  font-size: 1.1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* width: 500px; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+}
+
+/* img {
+  display: block;
+  width: 100%;
+  /* -webkit-mask-image: url(https://mask-test-ck.s3.eu-west-1.amazonaws.com/castle_mask.jpg);
+  mask-image: url(https://mask-test-ck.s3.eu-west-1.amazonaws.com/castle_mask.jpg); */
+/* mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: contain; */
+
+
+.image-remover {
+  /* min-width: 100px; */
+  width: 100%;
+  border: 0.5px solid white;
+  /* mask-position: center center; */
+  /* -webkit-mask-repeat: no-repeat; */
+  /* mask-repeat: no-repeat; */
+  /* mask-size: contain; */
+  /* border: none; */
+}
+
+.div-1 {
+  width: 100%;
 }
