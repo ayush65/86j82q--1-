@@ -24,7 +24,7 @@ const Remover = () => {
     formData.append("image_file", selectedFile);
     formData.append("size", "auto");
 
-    const api_key = "oyc633xbAjN6iyzLgyyakJs5";
+    const api_key = "KrcwSAmUhnoyT7WmN16fniT9";
 
     // send to the server
     await fetch("https://api.remove.bg/v1.0/removebg", {
@@ -80,7 +80,7 @@ const Remover = () => {
     alignItems: "center",
     justifyContent: "center",
 
-    width: "100px",
+    // width: "100px",
   };
 
   const increaseSize = () => {
